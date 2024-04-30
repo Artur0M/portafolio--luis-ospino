@@ -1,0 +1,360 @@
+@import url(reset.css);
+
+
+* {
+    font-family: "Raleway", sans-serif;
+}
+
+body {
+    background: #F5F5F5;
+}
+
+p {
+    line-height: 25px;
+}
+
+main {
+    margin: 0 auto;
+    padding: 0 18px;
+    
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.header__container {
+    height: 88px;
+    margin: 0 auto;
+    padding: 0 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* logo */
+.logo__nombre {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo__nombre h1{
+    font-size: 1.4em;
+}
+
+/* nav */
+.nav__container {
+    gap: 32px;
+    display: flex;
+}
+
+.nav__container li:nth-child(1),
+.nav__container li:nth-child(2),
+.nav__container li:nth-child(3),
+.nav__container li:nth-child(4),
+.nav__container li:nth-child(5) {
+    display: none;
+}
+
+
+/* presentacion */
+.presentacion__container {
+    align-items: center;
+    justify-content: space-between;
+    display: grid;
+    gap: 15px;
+}
+
+.perfil {
+    width: 98px;
+    border-radius: 50%;
+}
+
+.presentacion__texto {
+    gap: 10px;
+    display: grid;
+}
+
+.presentacion__texto h1{
+    font-size: 1.5em;
+}
+/* redes */
+.redes {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* sobre mi */
+.sobreMi {
+    padding: 40px 0;
+
+    background: #EAF2FD;
+    display: grid;
+}
+
+.sobreMi h1 {
+    font-size: 1.7em;
+}
+
+/* skills y hobbies */
+.skills__container,
+.hobbies__container {
+    display: grid;
+    gap: 25px;
+}
+
+.skills__container h1,
+.hobbies__container h1,
+.formacion__titulo,
+.experiencia__container h1 {
+    font-size: 1.7em;
+    text-align: center;
+}
+
+.lista__skills,
+.lista__hobbies{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.lista__skills li,
+.lista__hobbies li{
+    width: 150px;
+    padding: 70px 0 0 12px;
+    background: #FFFFFF;
+    font-weight: bold;
+    
+    flex-grow: 1;
+}
+
+.lista__skills img,
+.lista__hobbies img{
+    width: 25px;
+}
+
+/* formacion */
+.formacion__container {
+    background: #EAF2FD;
+    padding: 82px 0;
+    
+    row-gap: 40px;
+    display: grid;
+}
+
+.lista__formacion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 15px;
+}
+
+.lista__formacion li {
+    width: 292px;
+    
+    display: grid;
+    row-gap: 10px;
+}
+
+.logo__container {
+    background-color: #FFFFFF;
+    padding: 10px 0;
+
+    display: flex;
+    justify-content: center;
+}
+
+.logo__sena {
+    width: 130px;
+}
+
+/* experiencia profesional */
+.experiencia__container {
+    display: grid;
+    gap: 40px;
+}
+
+.lista__experiencia {
+    display: grid;
+    gap: 64px;
+}
+
+.lista__experiencia li{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+
+.imagen__repositorio {
+    width: 100%;
+}
+
+.btn__container {
+    display: inline-flex;
+    gap: 16px;
+}
+
+.btn__repositorio {
+    border: 1px solid #2A7AE4;
+    color: #2A7AE4;
+    padding: 12px 16px;
+}
+
+.btn__demo {
+    background: #2A7AE4;
+    color: #FFFFFF;
+    padding: 13px 17px;
+}
+
+/* formulario */
+.form__container {
+    display: flex;
+    background-color: #EAF2FD;
+
+    padding: 64px 0;
+}
+
+.form__imagen {
+    display: none;
+    height: 593px;
+    width: 464px;
+}
+
+form {
+    height: 593px;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+    row-gap: 16px;
+    width: 100%;
+    padding: 0 16px;
+}
+
+.contacto h1{
+    font-size: 1.7em;
+}
+
+.lista__form {
+    gap: 20px;
+    display: grid;
+}
+
+.lista__form li {
+    display: grid;
+
+    width: 100%;
+}
+
+.lista__form input{
+    display: flex;
+
+    height: 30px;
+    width: 100%;
+}
+
+.lista__form textarea{
+    resize: none;
+}
+
+.btn__enviar {
+    padding: 16px;
+    background: #2A7AE4;
+    color: #FFFFFF;
+}
+
+.btn__enviar:hover {
+    cursor: pointer;
+}
+
+footer {
+    padding: 16px;
+}
+
+footer p{
+    text-align: center;
+}
+
+/* ajuste de tamaños para tablet */
+@media (min-width: 768px) {
+
+    main,
+    .header__container {
+        padding: 0 35px;
+    }
+
+    /* nav */
+    .nav__container li:last-child {
+        font-weight: bold;
+    }
+
+    /* presentacion */
+    .presentacion__container {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .perfil {
+        width: 146px;
+    }
+    /* redes */
+    .redes {
+        padding-right: 200px;
+    }
+}
+
+/* ajustes de tamaño para computador */
+@media (min-width: 1140px) {
+    
+    main,
+    .header__container{
+        width: 1136px;
+    }
+
+    .nav__container li:nth-child(1),
+    .nav__container li:nth-child(2),
+    .nav__container li:nth-child(3),
+    .nav__container li:nth-child(4),
+    .nav__container li:nth-child(5) {
+        display: block;
+    }
+
+    /* presentacion */
+    .perfil {
+        width: 368px;
+    }
+
+    .presentacion__texto h1{
+        font-size: 2.5em;
+    }
+
+    /* sobre mi */
+    .sobreMi {
+        padding-right: 400px;
+    }
+
+    /* experiencia profesional */
+    .lista__experiencia li:nth-child(2) {
+        flex-direction: row-reverse;
+    }
+    
+    .imagen__repositorio {
+        width: 752px;
+    }
+
+    /* contacto */
+    .form__imagen {
+        display: block;
+    }
+
+}
+
+
+
