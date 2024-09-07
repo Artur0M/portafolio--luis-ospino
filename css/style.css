@@ -87,7 +87,12 @@ button:hover {
 .redes {
     flex-direction: row;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    gap: 20px;
+}
+
+.redes img{
+    width: 32px;
 }
 
 /* sobre mi */
@@ -135,7 +140,7 @@ button:hover {
 }
 
 .lista__skills img,
-.lista__hobbies img{
+.lista__hobbies img{/* color de los icons #2A7AE4 */
     width: 25px;
 }
 
@@ -190,6 +195,10 @@ button:hover {
     flex-wrap: wrap;
     gap: 20px;
     align-items: center;
+}
+
+.lista__experiencia li:first-child img{
+    box-shadow: 0 0 3px #0000003e;
 }
 
 .imagen__repositorio {
@@ -314,9 +323,9 @@ footer p{
         width: 146px;
     }
     /* redes */
-    .redes {
+    /* .redes {
         padding-right: 200px;
-    }
+    } */
 }
 
 /* ajustes de tamaño para computador */
