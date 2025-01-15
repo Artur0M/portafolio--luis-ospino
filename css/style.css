@@ -61,6 +61,10 @@ button:hover {
     display: none;
 }
 
+.nav__container a:hover{
+    text-decoration: underline;
+}
+
 
 /* presentacion */
 .presentacion__container {
@@ -93,6 +97,10 @@ button:hover {
 
 .redes img{
     width: 32px;
+}
+
+.redes img:hover {
+    scale: 1.1;
 }
 
 /* sobre mi */
@@ -273,13 +281,17 @@ form {
 
 .lista__form input{
     display: flex;
-
+    outline-color: #2A7AE4;
     height: 30px;
     width: 100%;
+    box-sizing: border-box;
+    padding: 0 10px;
 }
 
 .lista__form textarea{
     resize: none;
+    padding: 0 10px;
+    box-sizing: border-box;
 }
 
 .btn__enviar {
